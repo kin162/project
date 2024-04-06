@@ -24,6 +24,7 @@ const CreateCategory = ({
 			url: Yup.string().required("Trường bắt buộc!"),
 		}),
 		onSubmit: async (values: any) => {
+			console.log(values)
 			const res: any = await createCategory({
 				product_name: values.name,
 				quantity: 0,

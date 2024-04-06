@@ -122,6 +122,7 @@ const CreateReceipt = ({
 						weight: p.weight,
 					})),
 				});
+				console.log(res)
 				if (res?.data) {
 					toast.success("Tạo thông tin phiếu nhập kho thành công");
 					setButtonDisabled(!buttonDisabled);
